@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<head>
+    <title>Lab Test</title>
+    <style>
+    h2{
+        text-align: center;
+    }
+    .login{
+        color: black;
+        width: 200px;
+        
+        text-align: center;
+        vertical-align: middle;
+    }
+    
+    
+    button{
+        margin-top: 8px;
+        width:120px;
+        height: 30px;
+        padding: 2px;
+        float: center;
+        vertical-align: middle;
+        font-size: 15px;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        border-radius: 0.2px;
+        background-color: purple;
+        color: white;
+    }
+     
+    
+    </style>
+</head>
+<body>
+    <img src="lab-test.jpg" style="width: 450px;height: 650px; position: relative; top: -10px; left: 850px;"">
+    
+    <div style="width:400px;height:500px; position: relative; left: 200px; top: -650px;"
+    class="login">
+        <h4>1. Your Contact Details</h4>
+        <form action="Home.html">
+            <input type="text" name="u_name" placeholder="Full Name" required>
+            <input type="text" name="p_number" placeholder="Patient ID" minlength="5" required><br>
+            <input type="number" name="u_number" placeholder="Contact Number" minlength="10" required>
+            <input type="text" name="u_email" placeholder="Enter Email ID" required><br>
+        </form>
+        <form>
+            <h4>2. Address</h4>
+            <form action="Home.html">
+                <input type="number" name="h_number" placeholder="House" minlength="2" required>
+                <input type="text" name="a_street" placeholder="Street" required><br>
+                <input type="text" name="a_area" placeholder="Area" required><br>
+                <input type="text" name="a_district" placeholder="District" required><br>
+            
+        </form>
+        <form>
+            <h4>3. Choose the Test Type</h4>
+                <p>Check atleast one box without fail</p>
+                <input type="checkbox" id="cbc" name="cbc" value="CBC">
+                <label for="cbc">CBC</label><br>
+                <input type="checkbox" id="complete-urine" name="complete-urine" value="Complete Urine">
+                <label for="complete-urine">Complete Urine</label><br>
+                <input type="checkbox" id="lipid-profile" name="lipid-profile" value="Lipid Profile">
+                <label for="lipid-profile">Lipid Profile</label><br>
+                <input type="checkbox" id="tsh" name="tsh" value="Thyroid Stimulating Hormone(TSH)">
+                <label for="tsh">Thyroid Stimulating Hormone (TSH)</label><br>
+                <input type="checkbox" id="glucose-test" name="glucose-test" value="Glucose Test">
+                <label for="glucose-test">Glucose Test</label>
+            
+        </form>
+        <form>
+            <h4>Do you want a hard copy of the report also?</h4>
+                <input type="radio" id="yes" name="hardCopy" value="yes">
+                <label for="yes">Yes</label><br>
+                <input type="radio" id="no" name="hardCopy" value="no">
+                <label for="no">No</label>
+        </form>
+        <form>
+        <h4>Select a comfortable date and time</h4>
+        <label>Date</label>
+        <input type="date" name="date" min='2023-03-30' required><br>
+        <label>Time</label>
+        <input type="time" name="time" step="3600" min="08:00" max="22:00" required/>
+        </form>
+        <br><br>
+        <div class="button">
+            <button form="lab-form" type="reset">Reset</button>
+            <button form="lab-form" type="submit">Submit</button>
+        </div>
+               
+        
+    </div>
+
+</body>
+</html>
